@@ -16,6 +16,7 @@ public:
 	RubiksCube(int* tiles);
 	int getColor(int k, int i, int j);
 	bool compareTo(IColoredCube* cube);
+	void rotate(eSides side, int times);
 	void turn(eSides side, int times);
 protected:
 	void turn(int* arrFrom, int* arrTo, size_t count);	

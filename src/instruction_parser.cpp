@@ -104,21 +104,21 @@ bool InstructionParser::Parse(ITurnable* cube, int& state, char ch)
 			state = stOperation;
 			mCount = 1;
 		}
-		else if (ch == 'X')
+		else if (ch == 'x')
 		{
 			cube->turn(mOperation,mCount);
 			mOperation = XAXIS;
 			state = stOperation;
 			mCount = 1;
 		}
-		else if (ch == 'Y')
+		else if (ch == 'y')
 		{
 			cube->turn(mOperation,mCount);
 			mOperation = YAXIS;
 			state = stOperation;
 			mCount = 1;
 		}
-		else if (ch == 'Z')
+		else if (ch == 'z')
 		{
 			cube->turn(mOperation,mCount);
 			mOperation = ZAXIS;
